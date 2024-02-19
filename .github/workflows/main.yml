@@ -25,7 +25,7 @@ jobs:
   deploy:
     needs: test-build
     runs-on: ubuntu-latest
-    
+
     strategy:
       matrix:
         node-version: [16.x]
@@ -46,7 +46,7 @@ jobs:
               echo "Repository belum di-clone. Cloning...";
               mkdir -p ~/senpro/479414/modul02;
               cd ~/senpro/479414/modul02;
-              git clone git@github.com:axelxav/senpro-github-action.git;
+              git clone git@github.com:axelxav/senpro-github-action.git
             } ||
             {
               echo "Repository sudah ada. Building...";
